@@ -50,3 +50,9 @@ VALUES('QUE?????????', 'POO', 'pee@poo.com', '15222100', 21, '425', 'Diosito', N
 
 INSERT INTO maestros(nombre, edad, telefono, correo, usuario_creacio, fecha_creacion)
 VALUES('Profesor', 30, 1234567, 'profe@gmail.com','Diosito', NOW());
+
+INSERT INTO materias(nombre, profesor_id, create_user)
+VALUES('Administracion de base de datos', 1, 'Mejia');
+
+INSERT INTO calificaciones(estudiante_id, maestro_id, materia_id, create_user)
+VALUES(1,1,1,'Juan');
